@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crypto</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="work.css">
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(180,180,180,255);
+}
+
+.fixed-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is on top of other content */
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #242323;
+    align-items: center;
+    color: white;
+    padding: 10px 10px;
+
+}
+.logo{
+    width: 20%;
+}
+.nav-bar{
+    width: 60%;
+}
+.unorder{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: center;
+}
+ul li{
+   
+    margin: 0 20px ;
+}
+
+
+    
+   
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.account{
+    width: 20%;
+    display: flex;
+    margin-left: 25px;
+    color: white;
+  
+}
+   
+h1{
+    color: aliceblue;
+}
+.intro{
+    color:rgb(4, 171, 171);
+    font-size:40px;
+
+    
+}
+
+.reg {
+border-color: black;
+color: rgb(53, 176, 176);
+background-color: rgb(4, 171, 171);
+}
+
+.reg:hover {
+background-color: rgb(53, 176, 176);
+color: black;
+}
+
+
+
+
+.button {
+border: 2px solid ;
+
+color: black;
+padding: 14px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 12px
+}
+
+/* Green */
+.sign {
+border-color: white;
+color: white;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign:hover {
+background-color: white;
+color: black;
+}
+.spin {
+    animation: spin 5s linear infinite;
+    border-radius: 70%;
+   
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+
+
+}
+
+
+
+.home {
+    height: 820px; /* Full viewport height */
+    background: url('best.jpeg') fixed ;
+    background-size: cover;
+    display: flex;
+   position:relative;
+   justify-content:center;
+    align-items:center;
+}
+.cryptohome {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+.spin-1{
+  width: 20%;
+}
+.home-1{
+    display: flex;
+}
+h2  {
+    color: aliceblue;
+}
+
+hr{
+    border-style: 15px;
+    border-color: black;
+    border-width:2px 0 0 0 ;
+    height: 1px;
+    width: 40px;
+ margin: 1% 0 4% 48%;
+
+}
+.about{
+    margin: 50px;
+
+}
+.about-con{
+    width: 100%;
+    display: flex;
+    margin: 30px;
+}
+.about-1{
+    width: 50%;
+}
+.about-2{
+    width: 50%;
+}
+
+.wall{
+    background-image: url('IMG_4512.jpg') ;
+    background-size: cover;
+      background-position:center;
+      margin-bottom: 40px;
+      height:200px;
+      width: 100%;
+      position: relative;
+      justify-content:space-around;
+      align-items:center;
+    
+      display:flex;
+  
+  }
+  .best-wall{
+    background-image: url('bestwall.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    color: rgb(180,180,180,255);
+  }
+  .tro{
+    color:rgb(4, 171, 171);
+  }
+   
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(204, 204, 204,255);
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header-1 {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button3 {
+    background-color: cyan;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+  .biticon{
+    background-image: url('bit-icon.jpeg');
+    background-position:bottom;
+    background-size: cover;
+    height: 200px;
+    width:100%;
+    position:relative;
+    align-items: center;
+    
+  }
+  .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 24,
+   }
+   
+   
+   .large-icon{
+    font-size:48px;
+   
+   }
+   /*span element floater*/
+    
+   .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px;
+}
+
+.box {
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns with some space between */
+    
+    color: black;
+    padding: 10px;
+    text-align:start;
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 100%; /* Stack the boxes in a single column on smaller screens */
+    }
+}
+.ref{
+  width: 50%;
+}
+.ref2-div{
+  width: 50%;
+}
+
+
+.float-left{
+    float:left;
+    width: 33.3%;
+    font-size: 16px;
+  }
+  .float-right{
+    float:right;
+    width:33.3%;
+    font-size: 16px;
+  }
+  .float-right2{
+    float:right;
+    width: 33.3%;
+    font-size: 16px;
+  }
+
+     
+  .ref1{
+    background-color: black;
+    color:cyan;
+    width:100px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 35%;
+
+  }
+  h4{
+    color: black;
+  }
+  .container-2{
+    margin: 50px;
+    width: 100%;
+  }
+  .faq{
+    width: 100%;
+    display: flex;
+    background-image: url('faq.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    color:rgb(180,180,180,255) ;
+    height: 250px;
+    
+    
+
+  }
+  .faq-con{
+    width: 100%;
+    display: flex;
+    margin: 50px;
+  }
+  .faq-1{
+    width: 50%;
+ 
+  }
+  .faq-2{
+    width: 50%;
+
+  }
+  h3{
+    text-align: center;
+  }
+
+input[type='submit'] {
+  background-color:cyan;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+  font-weight: bold;
+  color: black;
+  margin:0 10px 5px 70px;
+  width:300px
+
+}
+input[type='text'], input[type='email'] {
+  border: 1px solid #2F5A78;
+  width: 300px;
+  padding: 15px;
+  margin:0 10px 5px 25px;
+}
+
+   input[type='textarea'] {
+  border: 1px solid #2F5A78;
+  width: 300px;
+  padding: 50px;
+  margin:0 10px 5px 13px;
+}
+  
+
+
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,40,45,255);
+    text-align: center;
+    padding: 70px;
+    color: #ccc;
+}
+.contact{
+  margin: 70px;
+  display: flex;
+  width: 100%;
+}
+.contact-1{
+  width: 60%;
+
+}
+.contact-2{
+  width: 40%;
+}
+.investment{
+  padding: 50px;
+}
+  </style>
+</head>
+<body>
+  <header class="fixed-header">
+<div class="header">
+  <div class="logo">
+    <h2>Cryptolitetrade</h2> 
+  </div>
+  <div class="nav-bar">
+    <ul class="unorder">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT US</a></li>
+    <li><a href="#investment">INVESTMENT PLANS</a></li>
+    <li><a href="#referrals">REFERRALS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+  </div>
+  <div class="account">
+    
+    <button class="button reg"  >Register an Account</button>
+    <button class="button sign">Sign in</button>
+  </div>
+</div>
+</header>
+
+
+<section id="home" class="home"> 
+  <div class="home-1">
+
+  <div class="spin1">
+      <img src="animate.jpeg" alt="" class="spin" id="glow" width="250px">
+   </div>
+ 
+<div class="cryptohome">
+  <h1 class="intro" style="font-size:400%">Cryptolitetrade</h1>
+     <h2>Advanced Assest Management.</h2>
+     <p style="color: aliceblue;">use our investment plan and get up to 12% rerturn in 24 hours</p>
+         <p style="color:cyan;">Cancel your deposit at any time</p>
+         <button class="button reg">Register an Account</button>
+         <button class="button sign">Sign in</button>
+         </div>
+     
+    
+</div>
+</section>
+<section class="about" id="about">
+  <h3 style="text-align:center" class="About">About us </h3> 
+  <hr>
+  
+  <div class="about-con">
+    <div class="about-1">
+  
+  <h3>What is cryptolitetrade.live?</h3>
+     <p style="word-spacing: 9px;">
+        
+            With the help of cryptolitetrade.live, you are able to earn money without leaving
+            your home, and what's more, without making any risky decisions.We have developed
+            a system that guarantees constant passive income in 4 investment plans. We are
+            registered certified and gives a standard profit percentage to your deposit. 
+            It’s a mining company, all mining processes are vig, profits are real. They 
+            get funds from estate managements and also backed up by the World bank of 
+            finance. We use professional advanced tools that are not available to average
+            users. Our analyzes diversify any risk of loss. The capital owned by our company 
+            guarantees the actions of our employees, because the profit is guaranteed for 
+            investors. how much can you earn by investing with us? 4% to 12%   of total  
+            passive income per day. The return of the invested deposit  is usually returned 
+            after 24 Hours. Due to our complete transparency to investors, we offer the 
+            possibility to cancel your deposit   and withdraw it at any time. We offer an 
+            easy-to-use interface, thanks to which you can start your adventure with investing
+            in a few minutes.  OMEGAPRO is an insurance company that got all of their investors
+            funds covered against any loss of our finance or bankruptcy. Should there be a 
+            case of bankruptcy against the company? Genworth financial will pay off the affectedr
+            investor/ investors.OMEGAPRO is an insurance company that got all of their investorsr
+            funds covered against any loss of our finance or bankruptcy. Should there be a case r
+            of bankruptcy faced by the company? 
+            Genworth financial will pay off the affected investors.
+        </p> 
+    </div>
+    <div class="about-2">
+     
+    
+      <div class="video"></div>
+                
+      <h3>Video presentation</h3>
+      <iframe width="580" height="315" src="https://www.youtube.com/embed/C8hfHYrkQDk?si=gE9P7EU_HdGG523I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  </section>
+
+  <div class="wall">
+    <div>
+
+    <h1>7,128</h1>
+    <p class="tro">Dailys online</p>
+    </div>
+
+    <div>
+    <h1>12,505</h1>
+    <p class="tro">Registered Members</p>
+    </div>
+
+    <div>
+    <h1>$ 14,397,433</h1>
+    <p class="tro"> Current Deposits</p>
+    </div>
+
+  
+    <div>
+    <h1>$ 40,537,685</h1>
+    <p class="tro">Total Withdrawals</p>
+    </div>
+
+</div>
+
+
+<section id="investment" >
+  <div class="investment" data-aos="fade-up">
+
+  <h3 style="text-align:center" >Our investment plans</h3>
+  <hr>
+  
+  <p style="text-align:center; margin: 30px;">Depending on the amount of your investment, you can use one of the four investment plans. You can have 
+      several different plans under one account.</p>
+  
+      <div class="columns">
+          <ul class="price">
+            <li class="header-1" >STANDARD PLAN</li>
+            <li class="grey">3%<br> AFTER 24 HOURS</li>
+            <li>Minimum deposit $50</li>
+            <li>Maximum deposit $1499</li>
+            <li>Earning paid every 24 hours</li>
+            <li>Return on investment: 3%</li>
+            <li>Deposite return after 24%</li>
+            <li>Cancel deposite at anytime</li>
+            <li class="grey"><a href="#" class="button3">Invest now</a></li>
+          </ul>
+        </div>
+  
+        <div class ="columns">
+          <ul class="price">
+            <li class="header-1" style="background-color:cyan" >PREMIUM PLAN</li>
+            <li class="grey">5%<br>AFTER 24 HOURS</li>
+            <li>Minimum deposit $1500</li>
+            <li>Maximum deposit $4999</li>
+            <li>Earning paid every 24 hours</li>
+            <li>Return of investment 5%</li>
+            <li>Deposit return after 24 hours</li>
+            <li>Cancel Deposit at anytime</li>
+            <li class="grey"><a href="#" class="button3">Invest now</a></li>
+          </ul>
+        </div>
+  
+    
+        <div class="columns">
+          <ul class="price">
+            <li class="header-1">GOLDEN PLAN</li>
+            <li class="grey">7%<br> After 36 hours</li>
+            <li>Minimum deposit $5000</li>
+            <li>Maximum deposit $9999</li>
+            <li>Earning paid after 36 hours</li>
+            <li>Return on investment 7%</li>
+            <li>Deposit return after 36 hours</li>
+            <li>Cancel deposit at anytime</li>
+            <li class="grey"><a href="#" class="button3">Invest now</a></li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price"> 
+            <li class="header-1">GOLDEN PLAN</li>
+            <li class="grey">7%<br> After 36 hours</li>
+            <li>Minimum deposit $5000</li>
+            <li>Maximum deposit $9999</li>
+            <li>Earning paid after 36 hours</li>
+            <li>Return on investment 7%</li>
+            <li>Deposit return after 36 hours</li>
+            <li>Cancel deposit at anytime</li>
+            <li class="grey"><a href="#" class="button3">Invest now</a></li>
+          </ul>
+        </div>
+  </div>
+
+</section>
+
+
+<div id="coinlib-widget">
+  <script type="text/javascript" src="https://widget.coinlib.io/widget?type=price-widget&theme=light"></script>
+</div>
+<div style="height:433px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;"><div style="height:413px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+
+<div id="crypto-prices"></div>
+
+
+<section id="referrals" class="referrals">
+    
+  <h3 style="text-align:center;">What Made Us Stand Out</h3>
+  <hr style="border-style:15px; border-color:black; border-width: 2px 0 0 0; height:1px; width: 40px;" >
+
+<section  class="referral" id="referral">
+<p style="text-align:center;" >What makes our investment system distinguish us from others and is the best in the market?</p>
+
+
+
+
+<div class="container-1">
+<span class="box"><i class="material-symbols-outlined large-icon">currency_exchange</i><h4> Daily Income
+  <br>
+  You will receive earnings every 24 hours on all 
+      days of the year. Your deposit is woprking all
+      the time, even on weekends and holidays</h4></span>
+
+<span class="box"><i class="material-symbols-outlined large-icon">tune</i> <h4>Full control of investment
+  <br>
+ You can cancel your deposit at any time and 
+      withdraw the funds.</h4></span>
+<span class="box"><i class="material-symbols-outlined large-icon">payments</i> <h4>Fast withdrawals
+  <br>
+Your withdrawal will be processed by our
+     operators as fast as possible. Maximum 
+     waiting time is up to 24 hours(7days/week)</h4></span>
+<span class="box"><i class="material-symbols-outlined large-icon">account_balance_wallet</i> <h4>Guaranteed Profit<br>
+  By using cryptolitetrade.live you have a
+     guaranteed daily profit of 4% to 12%
+     depending on the choseninvestment plan</h4></span>
+<span class="box"><i class="material-symbols-outlined large-icon">lock_person</i>  <h4>Data Protection <br>
+  We make every effort to ensure that your 
+    data and funds are 100% secured. we only
+    use secure connections and top-class servers.</h4></span>
+
+
+      <span class="box"><i class="material-symbols-outlined large-icon">forum</i><h4>24/7 live Support<br>
+          Our agents are available and always ready to
+            help you on chat 24/7. you can also contact us
+             via email or social media.</h4>
+          </span>
+          </div>
+          <div class="best-wall">
+            <div class="ref-div">
+
+            </div>
+            <div class="ref2-div" data-aos="fade-right">
+            <h3>REFERRAL PROGRAM</h3>
+            <p>With our referral program, you can earn money by advertising our
+               system to others. Build the best team with us. We offer 3-level 
+               referral program with 5%-2%-1% commission.Try to convince as many
+                people as possible, each new person is an additional income for you. 
+                Send your referral link to companions, family and share them on online 
+                media. We will provide you with all the information and necessary 
+                advertising materials. Record a video showing how you invest, share 
+                proofs of your payouts. We give you full freedom in advertising your 
+                reference link. The referral program earnings are unlimited, your structure
+                 can have a virtually infinite number of users, and your commissions will
+                  be paid immediately upon receipt.</p>
+                  </div>
+
+          </div>
+
+          <div class="container-2">
+            <h3 style="text-align: center;">How to Use Cryptolitetrade.live?<h3>
+                                   <hr>
+              <p style="font-size: 16px; color:#555; text-align: center;">Only 3 simple steps will allow you to invest and start earning with our guaranteed daily profit system.</p>
+    
+                  <div class="float-left">
+                <img src="ref1-removebg-preview.png" alt="register an account" width="100px">
+                <h4>Register an account</h4>
+                <div class="ref1">
+                  step 1
+                </div>
+                <p style="font-size: 14px; color:#555;">Register take 2 mins and it free. your <br>
+                  account will be active immediately</p>
+                
+              </div>
+              <div class="float-right2">
+                <img src="ref2-removebg-preview.png" alt="enjoy your profit" width="100">
+                 <h4>Enjoy your profit</h4>
+                <div class="ref1">
+                  step 3
+                </div>
+                <p style="font-size: 14px; color:#555;">You will recevie profit accruals 24 hours <br>
+                  after you made your deposit</p>
+                </div>
+    
+                <div class="float-right">
+                <img src="money-removebg-preview.png" alt="" width="100px">
+                 <h4>Make a deposit</h4>
+                 <div class="ref1">
+                  step 2
+                </div>
+                   <p style="font-size: 14px; color:#555;">the process is very simple. you <br>
+                    make deposit with 7 avaliable method</p>
+                  </div>
+                </div>
+              </section>
+              
+
+
+
+ 
+            <div class="faq">
+
+
+              <div class="faq-con">
+
+     <div class="faq-1" data-aos="fade-right">
+
+
+                  <p class="tro">Do I need any trading skills?</p>
+                  <p>Absolutely not, our asset management system works in such a way that our 
+                    traders manage your funds and professionally invest them, providing you with a 
+                    guaranteed daily profit. This is 100% passive income, regardless of your knowledge
+                     or skills.</p>
+                     <br>
+                  
+                  <p class="tro">What minimum and maximum amount can I invest?</p>
+                   <p>Minimum deposit amount is $50. Maximum deposit amount is unlimited on the last plan.</p>
+                  </div>
+                
+                  <div class="faq-2" data-aos="fade-left">
+                    <p class="tro">How long do I have to wait for withdrawal?</p>
+                    <p>Wihdrawals are processed instanty, The waiting time for withdrawal does not exceed 
+                      24 hours on all days of the year (including weekends and holidays). In our 24/7 work,
+                       our operators always make payouts as quickly as possible.</p>
+                       <br>
+                      
+                    <p class="tro">What is the minimum and maximum withdrawal amount?</p>
+                    <p>Minimum withdrawal amount is $50. Maximum withdrawal amount is unlimited.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+          
+
+
+
+ 
+              
+              <section id="contact">
+                <h3 style="text-align: center;"  >Contact Us</h3>
+                <hr>
+                    
+      <p style="text-align: center;">if you have any question about our company or need help with our service,
+        please don't hesitate to contact us we will reply as soon as possible. </p>
+<div class="contact">
+      
+
+  
+    <div class="contact-1" data-aos="fade-right">
+
+      <h6> cryptolitetrade.live</h6>
+      <p>2 Crawford Place,<br>
+       London, W1H 5NA<br>
+       United Kingdom</p>
+     <p class="tro"> admin@cryptolitetrade.live</p>
+     <br>
+     
+       <h4>Legal Documents</h4>
+<img src="cryptoduc.jpeg" alt="certified" style="width: 100px; height: 150px;">
+<p>company certificate</p>
+
+
+     </div>
+     <div class="contact-2">
+
+               
+
+           
+        <form data-aos="fade-left">
+        <label for="name" style="font-weight:bold;">Name</label>
+        <input type="text">
+        <br>
+        <label for="email" style="font-weight:bold">Email</label>
+          <input type="email">
+          <br>
+         
+          <label for="textarea" style="font-weight:bold">message</label>
+          <input type="textarea">
+          <br>
+          <input type="submit" value="send message">
+        </form>
+
+
+  <div>
+
+  </div>
+    
+              </section>
+<footer>
+  
+<h1 style="text-align: center;">Crytolitetrade</h1>
+  
+
+ <p>Copyright © 2021 cryptolitetrade.live
+Please read the <p class="tro">Terms & Conditions </p>before joining</p>
+</footer>
+
+
+    <!-- JivoChat code -->
+    <script type='text/javascript'>
+      (function(){ var widget_id = 'TTxGqIyCsI';var d=document;var w=window;function l(){
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+      s.src = '//code.jivochat.com/script/widget/'+widget_id;
+      var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+      if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+      else{w.addEventListener('load',l,false);}}})();
+      </script>
+      <!-- /JivoChat code --><script src="//code.jivosite.com/widget/TTxGqIyCsI" async></script>
+
+
+
+
+<script>
+  const apiKey = 'YOUR_COINLIB_API_KEY';
+  const apiUrl = `https://coinlib.io/api/v1/coin?key=${apiKey}&pref=USD&symbol=BTC,ETH,LTC`;
+
+  fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+          const pricesDiv = document.getElementById('crypto-prices');
+          data.coins.forEach(coin => {
+              const coinDiv = document.createElement('div');
+              coinDiv.className = 'crypto';
+              coinDiv.innerHTML = `<strong>${coin.name} (${coin.symbol}):</strong> $${coin.price}`;
+              pricesDiv.appendChild(coinDiv);
+          });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+
+
+
+     
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+
+</body>
+</html>
